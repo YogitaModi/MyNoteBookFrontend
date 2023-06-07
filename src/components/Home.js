@@ -1,4 +1,5 @@
 import React from "react";
+import Notes from "./Notes";
 
 export default function Home() {
   return (
@@ -45,9 +46,7 @@ export default function Home() {
           </button>
         </form>
       </div>
-      <div className="container">
-        <h2>you notes</h2>
-      </div>
+      <Notes />
     </div>
   );
 }
