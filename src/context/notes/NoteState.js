@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from "react";
 
 export default function NoteState(props) {
-  const host = "http://localhost:5000";
+  const host = process.env.REACT_APP_API;
   const initialNotes = [];
   const [notes, setNotes] = useState(initialNotes);
 
